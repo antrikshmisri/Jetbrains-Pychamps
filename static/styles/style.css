@@ -5,11 +5,43 @@ body
 }
 .overlay-div
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     min-height: 65%;
     background: linear-gradient(144deg, rgba(66,0,123,1) 0%, rgba(187,0,167,1) 100%);
 }
-
+.menu-panel
+{
+    position: absolute;
+    top: 65%;
+    min-height: 50px;
+}
+.active-panel
+{
+    background-color: #b30197;
+    color: white !important; 
+}
+.menu-panel .panels
+{
+    text-transform: uppercase;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-weight: 700;
+    font-size: 15px;
+    min-height: 50px;
+    border: 1px solid #f3ebf1;
+    border-top: none;
+    color: #b30197;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-panel .panels:hover
+{
+    background-color: #b30197;
+    color: white;
+}
 #navbarNav
 {
     width: 100%;
@@ -37,26 +69,58 @@ a.navbar-brand span
     font-size: 35px !important;
 }
 
+.active-color
+{
+    color: white !important;
+}
 a.nav-link
+{
+    transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: rgba(255, 255, 255 , 0.5) !important;
+}
+
+a.nav-link:hover
 {
     color: white !important;
 }
 
-
+a.sign-in
+{
+    color: white !important;
+}
 a.demo
 {
     font-weight: 700;
     border: 2px solid white;
     border-radius: 25px;
-    color: white;
+    color: white !important;
     padding: 10px 20px;
 }
 
 a.drive-thru
 {
+    border: 2px solid white;
+    transition: 200ms ease-in;
     font-weight: 700;
     border-radius: 25px;
     background-color: white;
     color: #8a1e6d !important;
     padding: 10px 20px;
+}
+a.drive-thru:hover
+{
+
+    background-color: rgba(255, 255, 255, 0);
+    color: white !important;
+}
+h1.tagline
+{
+    margin-top: 20px;
+    font-weight: 300 !important;
+    font-size: 3.5rem;
+    color: white;
+}
+h1.tagline span
+{
+    font-weight: 600;
 }
