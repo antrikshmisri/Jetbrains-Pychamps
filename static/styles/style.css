@@ -298,3 +298,30 @@ h1.tagline span {
     color: rgba(255, 255, 255, 1) !important;
   }
 }
+
+
+/* ##########media queries############ */
+
+@media(max-width: 768px)
+{
+  .secondary-content .row:nth-child(odd) .feature-img
+  {
+    opacity: 0.1;
+    transform: translateX(-25%);
+  }
+  .secondary-content .row:nth-child(even) .feature-img
+  {
+    opacity: 0.1;
+    transform: translateX(25%);
+    
+  }
+  .secondary-content .row
+  {
+    margin-bottom: 0;
+    height: 400px;
+  }
+  .feature-desc
+  {
+    transform: translateY(-100%);
+  }
+}
