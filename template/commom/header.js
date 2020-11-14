@@ -24,7 +24,7 @@ header.insertAdjacentHTML(
     "</ul>" +
     '<ul class="navbar-nav contact-links">' +
     '<li class="nav-item">' +
-    '<a class="nav-link sign-in" href="#"><span>SIGN IN</span></a>' +
+    '<a class="nav-link sign-in" href="sign-in.html"><span>SIGN IN</span></a>' +
     "</li>" +
     '<li class="nav-item">' +
     '<a class="nav-link demo" href="#"><span>REQUEST DEMO</span></a>' +
