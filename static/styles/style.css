@@ -134,10 +134,15 @@ h1.tagline span {
 }
 
 .feature-img {
+  overflow: hidden;
   border-radius: 50%;
   background-color: #f7f6fb;
 }
 
+.feature-img img
+{
+  z-index: 2;
+}
 .feature-img-png {
   overflow: hidden;
 }

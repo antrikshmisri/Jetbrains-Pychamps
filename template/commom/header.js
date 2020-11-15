@@ -3,7 +3,7 @@ var header = document.querySelector("body");
 header.insertAdjacentHTML(
   "afterbegin",
   '<div class="container-fluid overlay-div">' +
-    '<h1 class="tagline">A customer experience <span>unlike any other</span></h1>' +
+    '<h1 class="tagline" data-aos = "fade-up" data-aos-delay = "500">A customer experience <span>unlike any other</span></h1>' +
     "</div>" +
     "<div class='container navbar-div px-0'>" +
     '<nav class="navbar navbar-expand-lg navbar-light">' +
