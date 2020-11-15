@@ -361,6 +361,44 @@ h1.tagline span {
   border-radius: 20px;
   margin-bottom: 2rem;
 }
+
+.footer
+{
+  position: relative;
+  top: 170vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  min-height: 100px;
+  margin: 3rem 0;
+}
+.footer a.navbar-brand span
+{
+  color: #42007b;
+}
+.footer .horizontal-line hr
+{
+  width: 200%;
+  transform: translateX(-25%);
+  background-color: #ffd4f7;
+  opacity: 0.4;
+  margin-top: 3rem;
+}
+.footer-links ul
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+.footer-links ul li a
+{
+  color: #b30197 !important;
+  font-weight: 700;
+  font-size: 12px;
+}
 /* ##############animations############ */
 
 @keyframes panelanim {
@@ -424,5 +462,11 @@ h1.tagline span {
   }
   .feature-desc {
     transform: translateY(-100%);
+  }
+  .benifit-image
+  {
+    bottom: 100vh;
+    transform: translateX(50%) !important;
+    z-index: -1;
   }
 }
