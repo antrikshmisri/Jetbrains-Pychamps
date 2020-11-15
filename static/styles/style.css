@@ -2,8 +2,7 @@ html {
   font-family: "Poppins", sans-serif !important;
   overflow-x: hidden;
 }
-*
-{
+* {
   box-sizing: border-box;
 }
 body {
@@ -139,8 +138,7 @@ h1.tagline span {
   background-color: #f7f6fb;
 }
 
-.feature-img img
-{
+.feature-img img {
   z-index: 2;
 }
 .feature-img-png {
@@ -320,9 +318,12 @@ h1.tagline span {
   flex-direction: row-reverse;
 }
 
-.are-you-ready-container
-{
-  background: linear-gradient(135deg, rgba(66,0,123,1) 20%, rgba(186,0,167,1) 100%);
+.are-you-ready-container {
+  background: linear-gradient(
+    135deg,
+    rgba(66, 0, 123, 1) 20%,
+    rgba(186, 0, 167, 1) 100%
+  );
   height: 500px;
   position: relative;
   top: 170vh;
@@ -331,28 +332,24 @@ h1.tagline span {
   justify-content: center;
   text-align: center;
 }
-.are-you-ready-container h4
-{
+.are-you-ready-container h4 {
   color: #b30197;
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 2rem;
 }
-.are-you-ready-container h2
-{
+.are-you-ready-container h2 {
   font-size: 2.5rem;
   font-weight: 600;
   color: white;
   margin-bottom: 2rem;
 }
-.are-you-ready-container .row p:nth-of-type(1)
-{
-  color:#b8acbd;
+.are-you-ready-container .row p:nth-of-type(1) {
+  color: #b8acbd;
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-.are-you-ready-container button
-{
+.are-you-ready-container button {
   padding: 10px 15px;
   outline: none;
   background-color: #b30197;
@@ -362,8 +359,7 @@ h1.tagline span {
   margin-bottom: 2rem;
 }
 
-.footer
-{
+.footer {
   position: relative;
   top: 170vh;
   display: flex;
@@ -373,28 +369,24 @@ h1.tagline span {
   min-height: 100px;
   margin: 3rem 0;
 }
-.footer a.navbar-brand span
-{
+.footer a.navbar-brand span {
   color: #42007b;
 }
-.footer .horizontal-line hr
-{
+.footer .horizontal-line hr {
   width: 200%;
   transform: translateX(-25%);
   background-color: #ffd4f7;
   opacity: 0.4;
   margin-top: 3rem;
 }
-.footer-links ul
-{
+.footer-links ul {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
 }
-.footer-links ul li a
-{
+.footer-links ul li a {
   color: #b30197 !important;
   font-weight: 700;
   font-size: 12px;
@@ -463,8 +455,7 @@ h1.tagline span {
   .feature-desc {
     transform: translateY(-100%);
   }
-  .benifit-image
-  {
+  .benifit-image {
     bottom: 100vh;
     transform: translateX(50%) !important;
     z-index: -1;
