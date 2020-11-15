@@ -1,5 +1,6 @@
 html {
   font-family: "Poppins", sans-serif !important;
+  overflow-x: hidden;
 }
 *
 {
@@ -72,7 +73,7 @@ a.drive-thru:hover {
   color: white !important;
 }
 h1.tagline {
-  animation: titleanim 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  /* animation: titleanim 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s; */
   margin-top: 20px;
   font-weight: 300 !important;
   font-size: 3.5rem;
@@ -96,7 +97,7 @@ h1.tagline span {
 }
 .menu-panel {
   cursor: pointer;
-  animation: panelanim 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  /* animation: panelanim 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); */
   position: absolute;
   top: 65%;
   min-height: 50px;
@@ -233,7 +234,7 @@ h1.tagline span {
   perspective: 1000px;
 }
 .feature {
-  animation: featureanim 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  /* animation: featureanim 1s cubic-bezier(0.075, 0.82, 0.165, 1); */
   max-width: 300px !important;
   padding: 25px 15px;
   margin: 20px 25px;
