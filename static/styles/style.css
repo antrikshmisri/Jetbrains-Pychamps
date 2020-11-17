@@ -16,6 +16,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 2;
+}
+.show
+{
+  visibility: visible;
 }
 .navbar-nav:nth-of-type(1) li {
   margin: 0 15px;
@@ -386,10 +391,18 @@ h1.tagline span {
   justify-content: space-between;
   list-style: none;
 }
+
 .footer-links ul li a {
+  transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
   color: #b30197 !important;
   font-weight: 700;
   font-size: 12px;
+}
+
+.footer-links ul li a:hover
+{
+  color: grey !important;
+  opacity: 0.5;
 }
 /* ##############animations############ */
 
