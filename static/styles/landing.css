@@ -6,3 +6,40 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+
+button.drive-thru
+{
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-top: 2rem;
+    width: 220px;
+    height: 50px;
+    background-color: #d000ae;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+button.drive-thru:hover
+{
+    background-color: #b9009a;
+}
+
+.side-image-div
+{
+    position: absolute; 
+    top: 45%;
+    left: 75%; 
+    border-radius: 50%;
+    max-width: 425px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+img.side-image
+{
+    border-radius: 50%;      
+}
