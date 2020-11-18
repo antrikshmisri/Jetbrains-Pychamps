@@ -1,6 +1,7 @@
 html {
   font-family: "Poppins", sans-serif !important;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 * {
   box-sizing: border-box;
@@ -109,6 +110,7 @@ h1.tagline span {
 .active-panel {
   background-color: #b30197 !important;
   color: white !important;
+  filter: drop-shadow(1px 1px 10px #b6acb4);
 }
 .menu-panel .panels {
   text-transform: uppercase;
