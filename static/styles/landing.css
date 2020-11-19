@@ -137,13 +137,18 @@ p.how-it-works-desc {
 
 .slide-features {
   padding: 5rem 5rem;
-  max-height: 80vh;
+  min-height: 80vh;
   min-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .slide-img {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(208, 0, 174, 0.5);
 }
 .slide-desc {
   display: flex;
@@ -152,7 +157,7 @@ p.how-it-works-desc {
   flex-direction: column;
   color: white;
   padding: 15px 20px;
-  background-color: rgba(208, 0, 174, 0.5);
+  background-color: rgba(67, 1, 124,0.5);
 }
 .slide-desc h1 {
   font-size: 25px;
@@ -164,7 +169,8 @@ p.how-it-works-desc {
   color: #cacaca;
 }
 .carousel-item img {
-  max-width: 300px;
+  min-width: 400px !important;
+  transform: translateY(-5%);
 }
 
 /* #####Animations##### */
