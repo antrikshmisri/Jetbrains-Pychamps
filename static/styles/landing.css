@@ -7,211 +7,179 @@ html {
   scroll-behavior: smooth;
 }
 
-
-button.drive-thru
-{
-    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
-    margin-top: 2rem;
-    width: 220px;
-    height: 50px;
-    background-color: #d000ae;
-    color: white;
-    outline: none;
-    border: none;
-    border-radius: 25px;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
+button.drive-thru {
+  transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  margin-top: 2rem;
+  width: 220px;
+  height: 50px;
+  background-color: #d000ae;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
-button.drive-thru:hover
-{
-    background-color: #b9009a;
+button.drive-thru:hover {
+  background-color: #b9009a;
 }
 
-.side-image-div
-{
-    position: absolute; 
-    top: 45%;
-    left: 75%; 
-    border-radius: 50%;
-    max-width: 425px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+.side-image-div {
+  position: absolute;
+  top: 45%;
+  left: 75%;
+  border-radius: 50%;
+  max-width: 425px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
-img.side-image
-{
-    border-radius: 50%;      
+img.side-image {
+  border-radius: 50%;
 }
 
-.virtual-assistant-div
-{
-    position: absolute;
-    top: 85%;
-    min-height: 80vh;
+.virtual-assistant-div {
+  position: absolute;
+  top: 85%;
+  min-height: 80vh;
 }
-.virtual-assistant-div .content
-{
-    width: 100%;
-    background-color: #f7f6fb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.virtual-assistant-div .content {
+  width: 100%;
+  background-color: #f7f6fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.virtual-assistant-div .content .content-wrapper
-{
-    margin-top: 10rem !important;
+.virtual-assistant-div .content .content-wrapper {
+  margin-top: 10rem !important;
 }
-.virtual-assistant-div .content h3.title
-{
-    color: #d000ae;
-    font-size: 12px;
-    font-weight: 700;
-    margin-bottom: 2rem;
+.virtual-assistant-div .content h3.title {
+  color: #d000ae;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
-.virtual-assistant-div .content .benifits-text h1
-{
-    color: #42007b;
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+.virtual-assistant-div .content .benifits-text h1 {
+  color: #42007b;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
-.virtual-assistant-div .content .benifits-text h1 span
-{
-    display: block;
-    font-size: 3rem;
-    
+.virtual-assistant-div .content .benifits-text h1 span {
+  display: block;
+  font-size: 3rem;
 }
-.virtual-assistant-div .content .benifits-text h1 span::before
-{
-    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation: greetText 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
-    content: "bonjour";
-    opacity: 1;
+.virtual-assistant-div .content .benifits-text h1 span::before {
+  transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: greetText 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+  content: "bonjour";
+  opacity: 1;
 }
 
-img.benifit-icon
-{
-    max-width: 30px;
+img.benifit-icon {
+  max-width: 30px;
 }
 
-h2.catchline
-{
-    color: #d000ae;
-    font-size: 1.5rem;
+h2.catchline {
+  color: #d000ae;
+  font-size: 1.5rem;
 }
-p.benifit-desc
-{
-    color: #95879f;
-    font-size: 1.1rem !important;
+p.benifit-desc {
+  color: #95879f;
+  font-size: 1.1rem !important;
 }
 
-.phone-image
-{
-    display: flex;
-    align-items: center;
+.phone-image {
+  display: flex;
+  align-items: center;
 }
-.phone-image img
-{
-    width: 100%;
-    transform: translateX(-40%);
+.phone-image img {
+  width: 100%;
+  transform: translateX(-40%);
 }
 
-.how-it-works-section
-{
-    background: linear-gradient(144deg, rgba(66,1,123,1) 0%, rgba(187,0,167,1) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    /* position: absolute;
+.how-it-works-section {
+  background: linear-gradient(
+    144deg,
+    rgba(66, 1, 123, 1) 0%,
+    rgba(187, 0, 167, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  /* position: absolute;
     top: 100%; */
-    width: 100%;
-
+  width: 100%;
 }
 
-h1.how-it-works-title
-{
-    letter-spacing: 2px;
-    font-size: 15px;
-    color: #d000ae;
-    font-weight: 700;
-    margin-bottom: 3rem;
-    margin-top: 4rem;
+h1.how-it-works-title {
+  letter-spacing: 2px;
+  font-size: 15px;
+  color: #d000ae;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
 }
 
-h1.how-it-works-tagline
-{
-    color: white;
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
+h1.how-it-works-tagline {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
-p.how-it-works-desc
-{
-    color: #cacaca;
-    font-size: 20px;
+p.how-it-works-desc {
+  color: #cacaca;
+  font-size: 20px;
 }
 
-.slide-features
-{
-    padding: 5rem 5rem;
-    max-height: 80vh;
-    min-width: 1000px;
+.slide-features {
+  padding: 5rem 5rem;
+  max-height: 80vh;
+  min-width: 1000px;
 }
-.slide-img
-{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slide-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.slide-desc
-{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    color: white;
-    padding: 15px 20px;
-    background-color: rgba(208, 0, 174,0.5);
+.slide-desc {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  padding: 15px 20px;
+  background-color: rgba(208, 0, 174, 0.5);
 }
-.slide-desc h1
-{
-    font-size: 25px;
-    font-weight: 700;
+.slide-desc h1 {
+  font-size: 25px;
+  font-weight: 700;
 }
-.slide-desc p
-{
-    font-weight: 200;
-    font-size: 20px;
-    color: #cacaca;
+.slide-desc p {
+  font-weight: 200;
+  font-size: 20px;
+  color: #cacaca;
 }
-.carousel-item img
-{
-    max-width: 300px;
+.carousel-item img {
+  max-width: 300px;
 }
 
 /* #####Animations##### */
-@keyframes greetText
-{
-
-    0%,25%
-    {
-        content: "Bonjour,";
-    }
-    50%
-    {
-        content: "Hello,";
-    }
-    75%
-    {
-        content: "Ciao,";
-    }
-    100%
-    {
-        content: "Greetings,";
-    }
+@keyframes greetText {
+  0%,
+  25% {
+    content: "Bonjour,";
+  }
+  50% {
+    content: "Hello,";
+  }
+  75% {
+    content: "Ciao,";
+  }
+  100% {
+    content: "Greetings,";
+  }
 }
-
