@@ -18,9 +18,9 @@ if (sPage == "customers.html") {
     "A customer experience <span>unlike any other</span>",
     "The way customers & restaurants <span>communicate has changed<span>"
   );
-  taglineDiv.insertAdjacentHTML("afterend" , '<div class = "col-lg-12"><button class = "drive-thru">DRIVE THRU PROGRAM</button></div>')
+  taglineDiv.insertAdjacentHTML("afterend" , '<div class = "col-lg-12" data-aos = "fade-up" data-aos-delay = "600"><button class = "drive-thru">DRIVE THRU PROGRAM</button></div>')
   overlayDiv.style.minHeight = "85%";
-  overlayDiv.style.backgroundImage = "url('/images/landing_back.jpg')"
+  overlayDiv.style.backgroundImage = "url('https://images.unsplash.com/photo-1500058504985-a3bbdb0a7781')"
   overlayDiv.style.backgroundSize = "1800px 1200px"
   overlayDiv.style.backgroundPosition = "center right"
 }
