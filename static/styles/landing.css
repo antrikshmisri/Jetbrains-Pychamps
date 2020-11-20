@@ -173,6 +173,53 @@ p.how-it-works-desc {
   transform: translateY(-5%);
 }
 
+
+.differentiators-section
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh !important;
+  flex-wrap: nowrap;
+}
+
+.differentiators-section .feature-section
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #42007b;
+}
+
+.differentiators-section .feature-section .feature-block
+{
+  background-color: white;
+  margin: 2rem 2rem;
+  padding: 1.5rem 1.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px !important;
+  filter: drop-shadow(2px 2px 15px rgba(148, 148, 148, 0.8));
+}
+
+.differentiators-section .feature-section .feature-block .feature-img
+{
+  min-width: 100px;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+.feature-hr
+{
+  width: 100%;
+  height: 2px;
+  border-radius: 15px;
+  background-color: #d000ae;
+  opacity: 0.8;
+}
 /* #####Animations##### */
 @keyframes greetText {
   0%,

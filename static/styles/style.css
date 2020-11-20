@@ -84,6 +84,7 @@ h1.tagline {
 }
 h1.tagline span {
   font-weight: 600;
+  color: greenyellow;
 }
 
 .overlay-div {
