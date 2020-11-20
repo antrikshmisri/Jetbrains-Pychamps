@@ -26,14 +26,11 @@ button.drive-thru:hover {
 }
 
 .side-image-div {
-  position: absolute;
-  top: 45%;
-  left: 75%;
+  position: relative;
   border-radius: 50%;
-  max-width: 425px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  max-width: 25%;
+  left: 40%;
+  top: 35vh;
 }
 img.side-image {
   border-radius: 50%;
