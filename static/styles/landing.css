@@ -157,7 +157,7 @@ p.how-it-works-desc {
   flex-direction: column;
   color: white;
   padding: 15px 20px;
-  background-color: rgba(67, 1, 124,0.5);
+  background-color: rgba(67, 1, 124, 0.5);
 }
 .slide-desc h1 {
   font-size: 25px;
@@ -173,9 +173,7 @@ p.how-it-works-desc {
   transform: translateY(-5%);
 }
 
-
-.differentiators-section
-{
+.differentiators-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,13 +182,11 @@ p.how-it-works-desc {
   background-color: #f7f6fb;
 }
 
-h1.differentiator-catchline
-{
+h1.differentiator-catchline {
   font-weight: 700;
   color: #42007b;
 }
-.differentiators-section .feature-section
-{
+.differentiators-section .feature-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,8 +195,7 @@ h1.differentiator-catchline
   margin-bottom: 10rem !important;
 }
 
-.differentiators-section .feature-section .feature-block
-{
+.differentiators-section .feature-section .feature-block {
   background-color: white;
   margin: 2rem 2rem;
   padding: 1.5rem 1.5rem;
@@ -212,26 +207,22 @@ h1.differentiator-catchline
   filter: drop-shadow(2px 2px 15px rgba(148, 148, 148, 0.8));
 }
 
-.differentiators-section .feature-section .feature-block .feature-img
-{
+.differentiators-section .feature-section .feature-block .feature-img {
   min-width: 100px;
   background-color: #ebebeb;
   border-radius: 50%;
   margin-bottom: 2rem;
 }
-.differentiators-section .feature-section .feature-block h2.name
-{
+.differentiators-section .feature-section .feature-block h2.name {
   color: #d000ae;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 2px;
 }
-.differentiators-section .feature-section .feature-block p
-{
+.differentiators-section .feature-section .feature-block p {
   color: #95879f;
 }
-.feature-hr
-{
+.feature-hr {
   width: 100%;
   height: 2px;
   border-radius: 15px;
@@ -239,16 +230,13 @@ h1.differentiator-catchline
   opacity: 0.8;
 }
 
-.benifits-section
-{
+.benifits-section {
   min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.benifits-section .how-it-works-banner
-{
-
+.benifits-section .how-it-works-banner {
   min-height: 20vh;
   background-color: #d000ae;
   display: flex;
@@ -256,25 +244,21 @@ h1.differentiator-catchline
   align-items: center;
   margin-bottom: 5rem;
 }
-.benifits-section .how-it-works-banner h1
-{
+.benifits-section .how-it-works-banner h1 {
   font-size: 2rem;
   color: white;
   font-weight: 700;
 }
-.benifits-section .how-it-works-banner p
-{
+.benifits-section .how-it-works-banner p {
   font-size: 20px;
   color: #cacaca;
 }
-.benifits-section .how-it-works-banner .register-button-div
-{
+.benifits-section .how-it-works-banner .register-button-div {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.benifits-section .how-it-works-banner .register-button-div button
-{
+.benifits-section .how-it-works-banner .register-button-div button {
   width: 40%;
   height: 50%;
   border: none;
@@ -285,37 +269,31 @@ h1.differentiator-catchline
   font-size: 15px;
   color: #d000ae;
 }
-.text-content
-{
+.text-content {
   position: absolute;
   top: 50;
-
 }
-.text-content h1
-{
+.text-content h1 {
   color: #d000ae;
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 2rem;
 }
-.text-content p
-{
+.text-content p {
   color: white;
   margin-bottom: 2rem;
 }
-.text-content p img
-{
+.text-content p img {
   max-width: 30px;
   min-height: 30px !important;
   margin-right: 1.5rem;
 }
-.benifits-section .customer-benifit
-{
+.benifits-section .customer-benifit {
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   min-height: 50vh;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: rgba(66, 0, 123,0.8);
+  background-color: rgba(66, 0, 123, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,19 +301,17 @@ h1.differentiator-catchline
   transform: translateY(-5%) !important;
 }
 
-.benifits-section .customer-benifit img
-{
+.benifits-section .customer-benifit img {
   width: 100%;
   min-height: 50vh;
   opacity: 0.5;
 }
-.benifits-section .restaurant-benifit
-{
+.benifits-section .restaurant-benifit {
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   min-height: 50vh;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: rgba(66, 0, 123,0.8);
+  background-color: rgba(66, 0, 123, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -343,8 +319,7 @@ h1.differentiator-catchline
   transform: translateY(5%) !important;
 }
 
-.benifits-section .restaurant-benifit img
-{
+.benifits-section .restaurant-benifit img {
   width: 100%;
   min-height: 50vh;
   opacity: 0.5;
