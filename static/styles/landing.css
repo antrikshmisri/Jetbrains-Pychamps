@@ -181,8 +181,14 @@ p.how-it-works-desc {
   align-items: center;
   min-height: 90vh !important;
   flex-wrap: nowrap;
+  background-color: #f7f6fb;
 }
 
+h1.differentiator-catchline
+{
+  font-weight: 700;
+  color: #42007b;
+}
 .differentiators-section .feature-section
 {
   display: flex;
@@ -190,6 +196,7 @@ p.how-it-works-desc {
   align-items: center;
   flex-wrap: nowrap;
   background-color: #42007b;
+  margin-bottom: 10rem !important;
 }
 
 .differentiators-section .feature-section .feature-block
@@ -212,6 +219,17 @@ p.how-it-works-desc {
   border-radius: 50%;
   margin-bottom: 2rem;
 }
+.differentiators-section .feature-section .feature-block h2.name
+{
+  color: #d000ae;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.differentiators-section .feature-section .feature-block p
+{
+  color: #95879f;
+}
 .feature-hr
 {
   width: 100%;
@@ -219,6 +237,117 @@ p.how-it-works-desc {
   border-radius: 15px;
   background-color: #d000ae;
   opacity: 0.8;
+}
+
+.benifits-section
+{
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benifits-section .how-it-works-banner
+{
+
+  min-height: 20vh;
+  background-color: #d000ae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.benifits-section .how-it-works-banner h1
+{
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+}
+.benifits-section .how-it-works-banner p
+{
+  font-size: 20px;
+  color: #cacaca;
+}
+.benifits-section .how-it-works-banner .register-button-div
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benifits-section .how-it-works-banner .register-button-div button
+{
+  width: 40%;
+  height: 50%;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  color: #d000ae;
+}
+.text-content
+{
+  position: absolute;
+  top: 50;
+
+}
+.text-content h1
+{
+  color: #d000ae;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.text-content p
+{
+  color: white;
+  margin-bottom: 2rem;
+}
+.text-content p img
+{
+  max-width: 30px;
+  min-height: 30px !important;
+  margin-right: 1.5rem;
+}
+.benifits-section .customer-benifit
+{
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(66, 0, 123,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  transform: translateY(-5%) !important;
+}
+
+.benifits-section .customer-benifit img
+{
+  width: 100%;
+  min-height: 50vh;
+  opacity: 0.5;
+}
+.benifits-section .restaurant-benifit
+{
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(66, 0, 123,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  transform: translateY(5%) !important;
+}
+
+.benifits-section .restaurant-benifit img
+{
+  width: 100%;
+  min-height: 50vh;
+  opacity: 0.5;
 }
 /* #####Animations##### */
 @keyframes greetText {
