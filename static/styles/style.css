@@ -103,7 +103,7 @@ h1.tagline span {
 .menu-panel {
   cursor: pointer;
   animation: panelanim 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-  position: absolute;
+
   top: 65%;
   min-height: 50px;
 }
@@ -134,7 +134,7 @@ h1.tagline span {
 
 .secondary-content {
   position: relative;
-  top: 80vh;
+
   width: 100%;
 }
 
