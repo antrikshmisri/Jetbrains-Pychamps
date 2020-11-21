@@ -177,6 +177,7 @@ p.how-it-works-desc {
   min-height: 90vh !important;
   flex-wrap: nowrap;
   background-color: #f7f6fb;
+  margin-bottom: 5rem;
 }
 
 h1.differentiator-catchline {
@@ -232,6 +233,7 @@ h1.differentiator-catchline {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10rem;
 }
 .benifits-section .how-it-works-banner {
   min-height: 20vh;
@@ -320,6 +322,64 @@ h1.differentiator-catchline {
   width: 100%;
   min-height: 50vh;
   opacity: 0.5;
+}
+
+.clients-section
+{
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f6fb;
+}
+
+.clients-section .video-div
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-section iframe
+{
+  width: 100%;
+  min-height: 100%;
+  margin-right: 2rem;
+  border-radius: 15px;
+  filter: drop-shadow(5px 5px 10px #cacaca);
+}
+
+.clients-section .video-text-desc h1.title
+{
+  font-size: 15px;
+  font-weight: 700;
+  color: #d000ae;
+  margin-bottom: 2rem;
+  margin-top: 1rem
+}
+.clients-section .video-text-desc h2.clients-tagline
+{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #42007b;
+  margin-bottom: 2rem;
+}
+.clients-section .video-text-desc p
+{
+  color: #95879f;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.clients-section .video-text-desc img
+{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.clients-section .video-text-desc hr
+{
+  height: 3px;
+  background-color: #d000ae;
+  opacity: 0.5;
+  border-radius: 20px;
 }
 /* #####Animations##### */
 @keyframes greetText {
