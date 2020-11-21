@@ -11,6 +11,7 @@ if (sPage == "customers.html") {
     "A customer experience <span>unlike any other</span>",
     "Today’s Restaurants Rely on OpenCity"
   );
+
 } else if (sPage == "landing.html") {
   console.log(sPage);
   title.innerHTML = title.innerHTML.replace(
@@ -32,5 +33,6 @@ if (sPage == "customers.html") {
     "A customer experience <span>unlike any other</span>",
     "<span> Request Demo </span>"
   );
+
 
 }
