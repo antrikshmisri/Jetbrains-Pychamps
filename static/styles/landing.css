@@ -324,8 +324,7 @@ h1.differentiator-catchline {
   opacity: 0.5;
 }
 
-.clients-section
-{
+.clients-section {
   min-height: 90vh;
   display: flex;
   justify-content: center;
@@ -333,14 +332,12 @@ h1.differentiator-catchline {
   background-color: #f7f6fb;
 }
 
-.clients-section .video-div
-{
+.clients-section .video-div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.clients-section iframe
-{
+.clients-section iframe {
   width: 100%;
   min-height: 100%;
   margin-right: 2rem;
@@ -348,34 +345,29 @@ h1.differentiator-catchline {
   filter: drop-shadow(5px 5px 10px #cacaca);
 }
 
-.clients-section .video-text-desc h1.title
-{
+.clients-section .video-text-desc h1.title {
   font-size: 15px;
   font-weight: 700;
   color: #d000ae;
   margin-bottom: 2rem;
-  margin-top: 1rem
+  margin-top: 1rem;
 }
-.clients-section .video-text-desc h2.clients-tagline
-{
+.clients-section .video-text-desc h2.clients-tagline {
   font-size: 3rem;
   font-weight: 700;
   color: #42007b;
   margin-bottom: 2rem;
 }
-.clients-section .video-text-desc p
-{
+.clients-section .video-text-desc p {
   color: #95879f;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.clients-section .video-text-desc img
-{
+.clients-section .video-text-desc img {
   width: 100%;
   margin-bottom: 1rem;
 }
-.clients-section .video-text-desc hr
-{
+.clients-section .video-text-desc hr {
   height: 3px;
   background-color: #d000ae;
   opacity: 0.5;
