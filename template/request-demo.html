@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <base href="/" />
+    <link rel="stylesheet" type="text/css" href="/static/styles/signin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid main-container">
+      <div class="row justify-content-center mx-0">
+        <div class="col-lg-12 col-sm-12 signin-container">
+          <img
+            src="https://console.opencity.co/static/oc-logo.png"
+            alt=""
+            class="logo img-fluid"
+          />
+            <div class="container user-inputs">
+              <div class="row">
+                <div class="col-lg-12">
+                  <input id="userEmail" type="text" required placeholder="Email" />
+                  <small id="userEmailError" class="form-text text-danger">This Field must be filled.</small>
+                </div>
+                <div class="col-lg-12">
+                  <input id="userPassword" type="password" required placeholder="Password" />
+                  <small id="userPasswordError" class="form-text text-danger">Your password must be uppercase, lowercase and more than 10 characters.</small>
+                </div>
+                <div class="col-lg-6 my-2 register">
+                  <button type="submit" onclick="signUp()">Register</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="template/scripts/signInRegister.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <body>
+      <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+    
+      <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    
+      <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+      <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+    
+      <!-- Add Firebase products that you want to use -->
+      <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    </body>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyDzKvGSA0XxzM2828cTofbffSsIHrX_hvM",
+        authDomain: "pycharms-jetbrain-hackathon.firebaseapp.com",
+        databaseURL: "https://pycharms-jetbrain-hackathon.firebaseio.com",
+        projectId: "pycharms-jetbrain-hackathon",
+        storageBucket: "pycharms-jetbrain-hackathon.appspot.com",
+        messagingSenderId: "907943394725",
+        appId: "1:907943394725:web:e5dafcbd9505a1ee85fc4c",
+        measurementId: "G-C8ZSX9R691"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+  </body>
+</html>

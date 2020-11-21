@@ -1,0 +1,401 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+button.drive-thru {
+  transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  margin-top: 2rem;
+  width: 220px;
+  height: 50px;
+  background-color: #d000ae;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+button.drive-thru:hover {
+  background-color: #b9009a;
+}
+
+.side-image-div {
+  position: relative;
+  border-radius: 50%;
+  max-width: 25%;
+  left: 40%;
+  top: 35vh;
+}
+img.side-image {
+  border-radius: 50%;
+}
+
+.virtual-assistant-div {
+  position: absolute;
+  top: 85%;
+  min-height: 80vh;
+}
+.virtual-assistant-div .content {
+  width: 100%;
+  background-color: #f7f6fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.virtual-assistant-div .content .content-wrapper {
+  margin-top: 10rem !important;
+}
+.virtual-assistant-div .content h3.title {
+  color: #d000ae;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.virtual-assistant-div .content .benifits-text h1 {
+  color: #42007b;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.virtual-assistant-div .content .benifits-text h1 span {
+  display: block;
+  font-size: 3rem;
+}
+.virtual-assistant-div .content .benifits-text h1 span::before {
+  transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: greetText 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+  content: "bonjour";
+  opacity: 1;
+}
+
+img.benifit-icon {
+  max-width: 30px;
+}
+
+h2.catchline {
+  color: #d000ae;
+  font-size: 1.5rem;
+}
+p.benifit-desc {
+  color: #95879f;
+  font-size: 1.1rem !important;
+}
+
+.phone-image {
+  display: flex;
+  align-items: center;
+}
+.phone-image img {
+  width: 100%;
+  transform: translateX(-40%);
+}
+
+.how-it-works-section {
+  background: linear-gradient(
+    144deg,
+    rgba(66, 1, 123, 1) 0%,
+    rgba(187, 0, 167, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  /* position: absolute;
+    top: 100%; */
+  width: 100%;
+}
+
+h1.how-it-works-title {
+  letter-spacing: 2px;
+  font-size: 15px;
+  color: #d000ae;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+}
+
+h1.how-it-works-tagline {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+p.how-it-works-desc {
+  color: #cacaca;
+  font-size: 20px;
+}
+
+.slide-features {
+  padding: 5rem 5rem;
+  min-height: 80vh;
+  min-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(208, 0, 174, 0.5);
+}
+.slide-desc {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  padding: 15px 20px;
+  background-color: rgba(67, 1, 124, 0.5);
+}
+.slide-desc h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.slide-desc p {
+  font-weight: 200;
+  font-size: 20px;
+  color: #cacaca;
+}
+.carousel-item img {
+  min-width: 400px !important;
+  transform: translateY(-5%);
+}
+
+.differentiators-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh !important;
+  flex-wrap: nowrap;
+  background-color: #f7f6fb;
+  margin-bottom: 5rem;
+}
+
+h1.differentiator-catchline {
+  font-weight: 700;
+  color: #42007b;
+}
+.differentiators-section .feature-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #42007b;
+  margin-bottom: 10rem !important;
+}
+
+.differentiators-section .feature-section .feature-block {
+  background-color: white;
+  margin: 2rem 2rem;
+  padding: 1.5rem 1.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px !important;
+  filter: drop-shadow(2px 2px 15px rgba(148, 148, 148, 0.8));
+}
+
+.differentiators-section .feature-section .feature-block .feature-img {
+  min-width: 100px;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+.differentiators-section .feature-section .feature-block h2.name {
+  color: #d000ae;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.differentiators-section .feature-section .feature-block p {
+  color: #95879f;
+}
+.feature-hr {
+  width: 100%;
+  height: 2px;
+  border-radius: 15px;
+  background-color: #d000ae;
+  opacity: 0.8;
+}
+
+.benifits-section {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.benifits-section .how-it-works-banner {
+  min-height: 20vh;
+  background-color: #d000ae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.benifits-section .how-it-works-banner h1 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+}
+.benifits-section .how-it-works-banner p {
+  font-size: 20px;
+  color: #cacaca;
+}
+.benifits-section .how-it-works-banner .register-button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benifits-section .how-it-works-banner .register-button-div button {
+  width: 40%;
+  height: 50%;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  color: #d000ae;
+}
+.text-content {
+  position: absolute;
+  top: 50;
+}
+.text-content h1 {
+  color: #d000ae;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.text-content p {
+  color: white;
+  margin-bottom: 2rem;
+}
+.text-content p img {
+  max-width: 30px;
+  min-height: 30px !important;
+  margin-right: 1.5rem;
+}
+.benifits-section .customer-benifit {
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(66, 0, 123, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  transform: translateY(-5%) !important;
+}
+
+.benifits-section .customer-benifit img {
+  width: 100%;
+  min-height: 50vh;
+  opacity: 0.5;
+}
+.benifits-section .restaurant-benifit {
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(66, 0, 123, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  transform: translateY(5%) !important;
+}
+
+.benifits-section .restaurant-benifit img {
+  width: 100%;
+  min-height: 50vh;
+  opacity: 0.5;
+}
+
+.clients-section {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f6fb;
+}
+
+.clients-section .video-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(5px 5px 10px #ababab);
+  margin-right: 3rem;
+}
+
+.clients-section iframe {
+  width: 100%;
+  min-height: 100%;
+  margin-right: 2rem;
+  border-radius: 15px;
+}
+.clients-section .video-text-desc
+{
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #f7f6fb;
+  filter: drop-shadow(1px 1px 10px #ababab);
+  border-radius: 15px;
+}
+
+
+.clients-section .video-text-desc h1.title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #d000ae;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.clients-section .video-text-desc h2.clients-tagline {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #42007b;
+  margin-bottom: 2rem;
+}
+.clients-section .video-text-desc p {
+  color: #95879f;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.clients-section .video-text-desc img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.clients-section .video-text-desc hr {
+  height: 3px;
+  background-color: #d000ae;
+  opacity: 0.5;
+  border-radius: 20px;
+}
+/* #####Animations##### */
+@keyframes greetText {
+  0%,
+  25% {
+    content: "Bonjour,";
+  }
+  50% {
+    content: "Hello,";
+  }
+  75% {
+    content: "Ciao,";
+  }
+  100% {
+    content: "Greetings,";
+  }
+}

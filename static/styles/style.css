@@ -1,11 +1,15 @@
 html {
   font-family: "Poppins", sans-serif !important;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Poppins", sans-serif !important;
-  box-sizing: border-box;
   min-height: 90vh;
+  margin: 0 0;
 }
 
 .headnav {
@@ -21,6 +25,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.show {
+  visibility: visible;
 }
 .navbar-nav:nth-of-type(1) li {
   margin: 0 15px;
@@ -77,7 +84,7 @@ a.drive-thru:hover {
   color: white !important;
 }
 h1.tagline {
-  animation: titleanim 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  /* animation: titleanim 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s; */
   margin-top: 20px;
   font-weight: 300 !important;
   font-size: 3.5rem;
@@ -85,6 +92,7 @@ h1.tagline {
 }
 h1.tagline span {
   font-weight: 600;
+  color: greenyellow;
 }
 
 .overlay-div {
@@ -102,13 +110,21 @@ h1.tagline span {
 }
 .menu-panel {
   cursor: pointer;
-  animation: panelanim 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 
+  animation: panelanim 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   top: 65%;
   min-height: 50px;
 }
 .active-panel {
   background-color: #b30197 !important;
+  color: white !important;
+  filter: drop-shadow(1px 1px 10px #b6acb4);
+}
+a {
+  text-decoration: none !important;
+  outline: none;
+}
+a:hover {
   color: white !important;
 }
 .menu-panel .panels {
@@ -139,10 +155,14 @@ h1.tagline span {
 }
 
 .feature-img {
+  overflow: hidden;
   border-radius: 50%;
   background-color: #f7f6fb;
 }
 
+.feature-img img {
+  z-index: 2;
+}
 .feature-img-png {
   overflow: hidden;
 }
@@ -239,7 +259,7 @@ h1.tagline span {
   perspective: 1000px;
 }
 .feature {
-  animation: featureanim 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  /* animation: featureanim 1s cubic-bezier(0.075, 0.82, 0.165, 1); */
   max-width: 300px !important;
   padding: 25px 15px;
   margin: 20px 25px;
@@ -249,6 +269,7 @@ h1.tagline span {
   align-items: center;
   justify-content: center;
   filter: drop-shadow(2px 2px 10px #cccbcf);
+  overflow: hidden;
 }
 .feature img.feature-graphic {
   max-width: 100px;
@@ -318,6 +339,87 @@ h1.tagline span {
   display: flex;
   flex-direction: row-reverse;
 }
+
+.are-you-ready-container {
+  background: linear-gradient(
+    135deg,
+    rgba(66, 0, 123, 1) 20%,
+    rgba(186, 0, 167, 1) 100%
+  );
+  height: 500px;
+  position: relative;
+  top: 170vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.are-you-ready-container h4 {
+  color: #b30197;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.are-you-ready-container h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 2rem;
+}
+.are-you-ready-container .row p:nth-of-type(1) {
+  color: #b8acbd;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.are-you-ready-container button {
+  padding: 10px 15px;
+  outline: none;
+  background-color: #b30197;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  position: relative;
+  top: 170vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  min-height: 100px;
+  margin: 3rem 0;
+}
+.footer a.navbar-brand span {
+  color: #42007b;
+}
+.footer .horizontal-line hr {
+  width: 200%;
+  transform: translateX(-25%);
+  background-color: #ffd4f7;
+  opacity: 0.4;
+  margin-top: 3rem;
+}
+.footer-links ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.footer-links ul li a {
+  transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+  color: #b30197 !important;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.footer-links ul li a:hover {
+  color: grey !important;
+  opacity: 0.5;
+}
 /* ##############animations############ */
 
 @keyframes panelanim {
@@ -381,5 +483,10 @@ h1.tagline span {
   }
   .feature-desc {
     transform: translateY(-100%);
+  }
+  .benifit-image {
+    bottom: 100vh;
+    transform: translateX(50%) !important;
+    z-index: -1;
   }
 }
