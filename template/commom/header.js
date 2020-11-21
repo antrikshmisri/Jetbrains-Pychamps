@@ -16,7 +16,7 @@ header.insertAdjacentHTML(
     '<a class="nav-link" href="404.html"><span>HOW IT WORKS</span></a>' +
     "</li>" +
     '<li class="nav-item">' +
-    '<a class="nav-link" href="404.html"><span>CUSTOMERS</span></a>' +
+    '<a class="nav-link" href="./customers.html"><span>CUSTOMERS</span></a>' +
     "</li>" +
     "</ul>" +
     '<ul class="navbar-nav contact-links">' +
