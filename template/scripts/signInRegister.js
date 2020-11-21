@@ -139,6 +139,7 @@ function signIn() {
       .signInWithEmailAndPassword(userSIEmail, userSIPassword)
       .then((success) => {
         console.log("Signed IN");
+        window.location.replace("template/landing.html");
       })
       .catch((error) => {
         // Handle Errors here.
