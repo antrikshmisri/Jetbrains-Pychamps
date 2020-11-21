@@ -145,6 +145,7 @@ function signIn() {
         var errorCode = error.code;
         var errorMessage = error.message;
         console.log("Error " + error);
+        window.alert("User does not exits");
       });
   }
 }
