@@ -95,11 +95,12 @@ h1.tagline span {
 }
 
 .overlay-div {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  min-height: 65%;
+  padding-top: 240px;
+  padding-bottom: 140px;
   background: linear-gradient(
     135deg,
     rgba(66, 0, 123, 1) 20%,
@@ -108,8 +109,8 @@ h1.tagline span {
 }
 .menu-panel {
   cursor: pointer;
-  /* animation: panelanim 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); */
-  position: absolute;
+
+  animation: panelanim 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   top: 65%;
   min-height: 50px;
 }
@@ -148,7 +149,7 @@ a:hover {
 
 .secondary-content {
   position: relative;
-  top: 80vh;
+
   width: 100%;
 }
 
