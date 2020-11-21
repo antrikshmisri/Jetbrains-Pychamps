@@ -1,6 +1,4 @@
 // Working for SignUp validation
-// document.getElementById("userEmailError").style.display = "none";
-// document.getElementById("userPasswordError").style.display = "none";
 function checkUserEmail() {
   let userEmail = document.getElementById("userEmail").value;
   let userEmailFormate = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -40,10 +38,11 @@ function checkUserPassword() {
 }
 
 function signUp() {
-  let userEmail = document.getElementById("userEmail").value;
-  console.log(`UserEmail ${userEmail}`);
   let userPassword = document.getElementById("userPassword").value;
   console.log(`UserPassword ${userPassword}`);
+
+  let userEmail = document.getElementById("userEmail").value;
+  console.log(`UserEmail ${userEmail}`);
 
   let userEmailFormate = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   let userPasswordFormate = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}/;
@@ -58,23 +57,27 @@ function signUp() {
   } else if (checkUserPasswordValid == null) {
     return checkUserPassword();
   } else {
+    console.log(userEmail);
+    console.log(userPassword);
     firebase
       .auth()
       .createUserWithEmailAndPassword(userEmail, userPassword)
       .then((success) => {
-        var user = firebase.auth().currentUser;
-        var uid;
+        console.log(success);
+        let user = firebase.auth().currentUser;
+        let uid;
         if (user != null) {
           uid = user.uid;
         }
         console.log("Created");
+        window.alert("Signed In");
         window.location.replace("template/sign-in.html");
       })
       .catch((error) => {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
-        console.log("Error " + error);
+        window.alert("Something Went wrong");
       });
   }
 }
@@ -84,7 +87,7 @@ function checkUserSIEmail() {
   let userSIEmailFormate = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   let flag;
 
-  if (userSIEmail.value.match(userSIEmail)) {
+  if (userSIEmail.value.match(userSIEmailFormate)) {
     flag = false;
   } else {
     flag = true;
@@ -142,6 +145,7 @@ function signIn() {
         var errorCode = error.code;
         var errorMessage = error.message;
         console.log("Error " + error);
+        window.alert("User does not exits");
       });
   }
 }
