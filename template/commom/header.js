@@ -2,10 +2,7 @@ var header = document.querySelector("body");
 
 header.insertAdjacentHTML(
   "afterbegin",
-  '<div class="container-fluid overlay-div">' +
-    '<h1 class="tagline">A customer experience <span>unlike any other</span></h1>' +
-    "</div>" +
-    "<div class='container navbar-div px-0'>" +
+  "<div class='headnav navbar-div px-0'>" +
     '<nav class="navbar navbar-expand-lg navbar-light">' +
     '<a class="navbar-brand my-3" href="#"><span>OpenCity</span></a>' +
     '<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>' +
@@ -35,5 +32,8 @@ header.insertAdjacentHTML(
     "</ul>" +
     "</div>" +
     "</nav>" +
+    "</div>" +
+    '<div class="heading overlay-div">' +
+    '<h1 class="tagline">A customer experience <span>unlike any other</span></h1>' +
     "</div>"
 );
