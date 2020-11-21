@@ -73,6 +73,9 @@ h1.tagline {
   background-color: #43007b;
 }
 
+.cusfoot {
+  top: 0;
+}
 .box1 {
   flex: 0 0 30%;
   margin-top: 60px;
