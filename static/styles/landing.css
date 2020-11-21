@@ -336,14 +336,24 @@ h1.differentiator-catchline {
   display: flex;
   justify-content: center;
   align-items: center;
+  filter: drop-shadow(5px 5px 10px #ababab);
+  margin-right: 3rem;
 }
+
 .clients-section iframe {
   width: 100%;
   min-height: 100%;
   margin-right: 2rem;
   border-radius: 15px;
-  filter: drop-shadow(5px 5px 10px #cacaca);
 }
+.clients-section .video-text-desc
+{
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #f7f6fb;
+  filter: drop-shadow(1px 1px 10px #ababab);
+  border-radius: 15px;
+}
+
 
 .clients-section .video-text-desc h1.title {
   font-size: 15px;
