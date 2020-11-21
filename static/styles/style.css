@@ -18,8 +18,7 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.show
-{
+.show {
   visibility: visible;
 }
 .navbar-nav:nth-of-type(1) li {
@@ -85,6 +84,7 @@ h1.tagline {
 }
 h1.tagline span {
   font-weight: 600;
+  color: greenyellow;
 }
 
 .overlay-div {
@@ -110,6 +110,13 @@ h1.tagline span {
   background-color: #b30197 !important;
   color: white !important;
   filter: drop-shadow(1px 1px 10px #b6acb4);
+}
+a {
+  text-decoration: none !important;
+  outline: none;
+}
+a:hover {
+  color: white !important;
 }
 .menu-panel .panels {
   text-transform: uppercase;
@@ -400,8 +407,7 @@ h1.tagline span {
   font-size: 12px;
 }
 
-.footer-links ul li a:hover
-{
+.footer-links ul li a:hover {
   color: grey !important;
   opacity: 0.5;
 }

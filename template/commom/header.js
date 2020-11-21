@@ -22,10 +22,10 @@ header.insertAdjacentHTML(
     '<span class="active-color">WHY OPENCITY</span></a>' +
     "</li>" +
     '<li class="nav-item">' +
-    '<a class="nav-link" href="#"><span>HOW IT WORKS</span></a>' +
+    '<a class="nav-link" href="404.html"><span>HOW IT WORKS</span></a>' +
     "</li>" +
     '<li class="nav-item">' +
-    '<a class="nav-link" href="./customers.html"><span>CUSTOMERS</span></a>' +
+    '<a class="nav-link" href="404.html"><span>CUSTOMERS</span></a>' +
     "</li>" +
     "</ul>" +
     '<ul class="navbar-nav contact-links">' +
@@ -36,7 +36,7 @@ header.insertAdjacentHTML(
     '<a class="nav-link demo" href="request-demo.html"><span>REQUEST DEMO</span></a>' +
     "</li>" +
     '<li class="nav-item">' +
-    '<a class="nav-link drive-thru" href="#"><span>DRIVE THRU PROGRAM</span></a>' +
+    '<a class="nav-link drive-thru" href="404.html"><span>DRIVE THRU PROGRAM</span></a>' +
     "</li>" +
     "</ul>" +
     "</div>" +
