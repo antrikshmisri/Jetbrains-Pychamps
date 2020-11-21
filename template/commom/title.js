@@ -17,6 +17,7 @@ if (sPage == "customers.html") {
     "A customer experience <span>unlike any other</span>",
     "The way customers & restaurants <span>communicate has changed<span>"
   );
+
   taglineDiv.insertAdjacentHTML(
     "afterend",
     '<div class = "col-lg-12"><button class = "drive-thru">DRIVE THRU PROGRAM</button></div>'
@@ -31,4 +32,5 @@ if (sPage == "customers.html") {
     "A customer experience <span>unlike any other</span>",
     "<span> Request Demo </span>"
   );
+
 }
