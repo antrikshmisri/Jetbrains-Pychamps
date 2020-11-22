@@ -1,6 +1,29 @@
+var sPath = window.location.pathname;
+var sPage = sPath.substring(sPath.lastIndexOf("/") + 1);
+let emailElementId = "";
+let passElementId = "";
+let userErrorElementId = "";
+let passErrorElementId = "";
+if(sPage == "request-demo.html")
+{
+  passElementId = "userPassword";
+  emailElementId = "userEmail";
+  userErrorElementId = "userEmailError";
+  passErrorElementId = "userPasswordError";
+}
+else if(sPage == "sign-in.html")
+{
+  passElementId = "userSIPassword";
+  emailElementId = "userSIEmail";
+  userErrorElementId = "userSIEmailError";
+  passErrorElementId = "userSIPasswordError";
+}
 // Working for SignUp validation
 function checkUserEmail() {
-  let userEmail = document.getElementById("userEmail").value;
+  if(sPage == "request-demo.html")
+  {userEmail = document.getElementById(emailElementId).value;}
+  else if(sPage == "sign-in.html")
+  {userEmail = document.getElementById(emailElementId).value;}
   let userEmailFormate = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   let flag;
 
@@ -11,16 +34,16 @@ function checkUserEmail() {
   }
 
   if (flag) {
-    document.getElementById("userEmailError").style.display = "block";
+    document.getElementById(userErrorElementId).style.display = "block";
     // console.log(flag);
   } else {
-    document.getElementById("userEmailError").style.display = "none";
+    document.getElementById(userErrorElementId).style.display = "none";
     // console.log(flag);
   }
 }
 
 function checkUserPassword() {
-  let userPassword = document.getElementById("userPassword");
+  let userPassword = document.getElementById(passElementId);
   let userPasswordFormulate = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}/;
   let flag;
 
@@ -31,17 +54,17 @@ function checkUserPassword() {
   }
 
   if (flag) {
-    document.getElementById("userPasswordError").style.display = "block";
+    document.getElementById(passErrorElementId).style.display = "block";
   } else {
-    document.getElementById("userPasswordError").style.display = "none";
+    document.getElementById(passErrorElementId).style.display = "none";
   }
 }
 
 function signUp() {
-  let userPassword = document.getElementById("userPassword").value;
+  let userPassword = document.getElementById(passElementId).value;
   console.log(`UserPassword ${userPassword}`);
 
-  let userEmail = document.getElementById("userEmail").value;
+  let userEmail = document.getElementById(emailElementId).value;
   console.log(`UserEmail ${userEmail}`);
 
   let userEmailFormate = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

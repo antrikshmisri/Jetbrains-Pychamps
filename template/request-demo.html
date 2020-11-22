@@ -28,15 +28,15 @@
             <div class="container user-inputs">
               <div class="row">
                 <div class="col-lg-12">
-                  <input id="userEmail" type="text" required placeholder="Email" />
+                  <input id="userEmail" oninput="checkUserEmail()" type="text" required placeholder="Email" />
                   <small id="userEmailError" class="form-text text-danger">This Field must be filled.</small>
                 </div>
                 <div class="col-lg-12">
-                  <input id="userPassword" type="password" required placeholder="Password" />
+                  <input id="userPassword" oninput="checkUserPassword()" type="password" required placeholder="Password" />
                   <small id="userPasswordError" class="form-text text-danger">Your password must be uppercase, lowercase and more than 10 characters.</small>
                 </div>
                 <div class="col-lg-6 my-2 register">
-                  <button type="submit" onclick="signUp()">Register</button>
+                  <button type="submit"  onclick="signUp()">Register</button>
                 </div>
               </div>
             </div>

@@ -28,11 +28,11 @@
           <div class="container user-inputs">
             <div class="row">
               <div class="col-lg-12">
-                <input id="userSIEmail" type="text" required placeholder="Email" />
+                <input id="userSIEmail" oninput="checkUserEmail()" type="text" required placeholder="Email" />
                 <small id="userSIEmailError" class="form-text text-danger">Please check your login information.</small>
               </div>
               <div class="col-lg-12">
-                <input id="userSIPassword" type="password" required placeholder="Password" />
+                <input id="userSIPassword" oninput="checkUserPassword()" type="password" required placeholder="Password" />
                 <small id="userSIPasswordError" class="form-text text-danger">Please check your password.</small>
               </div>
               <div class="col-lg-6 my-2">
