@@ -16,7 +16,7 @@ if (sPage == "customers.html") {
     "Our customers have one thing in common...they all use OpenCity to take the customer experience to the next level.";
   document.querySelector(".heading").style.flexDirection = "column";
   document.querySelector(".heading").appendChild(para);
-} else if (sPage == "landing.html") {
+} else if (sPage == "landing.html" || sPage == "") {
   console.log(sPage);
   title.innerHTML = title.innerHTML.replace(
     "A customer experience <span>unlike any other</span>",
