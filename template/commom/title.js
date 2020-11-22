@@ -24,7 +24,7 @@ if (sPage == "customers.html") {
   );
 
   taglineDiv.insertAdjacentHTML(
-    "afterend",
+    "beforeend",
     '<div class = "col-lg-12"><button class = "drive-thru">DRIVE THRU PROGRAM</button></div>'
   );
   overlayDiv.style.minHeight = "85%";
