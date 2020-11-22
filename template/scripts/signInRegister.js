@@ -4,15 +4,12 @@ let emailElementId = "";
 let passElementId = "";
 let userErrorElementId = "";
 let passErrorElementId = "";
-if(sPage == "request-demo.html")
-{
+if (sPage == "request-demo.html") {
   passElementId = "userPassword";
   emailElementId = "userEmail";
   userErrorElementId = "userEmailError";
   passErrorElementId = "userPasswordError";
-}
-else if(sPage == "sign-in.html")
-{
+} else if (sPage == "sign-in.html") {
   passElementId = "userSIPassword";
   emailElementId = "userSIEmail";
   userErrorElementId = "userSIEmailError";
@@ -20,10 +17,11 @@ else if(sPage == "sign-in.html")
 }
 // Working for SignUp validation
 function checkUserEmail() {
-  if(sPage == "request-demo.html")
-  {userEmail = document.getElementById(emailElementId).value;}
-  else if(sPage == "sign-in.html")
-  {userEmail = document.getElementById(emailElementId).value;}
+  if (sPage == "request-demo.html") {
+    userEmail = document.getElementById(emailElementId).value;
+  } else if (sPage == "sign-in.html") {
+    userEmail = document.getElementById(emailElementId).value;
+  }
   let userEmailFormate = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   let flag;
 
@@ -93,8 +91,8 @@ function signUp() {
           uid = user.uid;
         }
         console.log("Created");
-        window.alert("Signed In");
-        window.location.replace("template/sign-in.html");
+        window.alert("Registered");
+        window.location.replace("sign-in.html");
       })
       .catch((error) => {
         // Handle Errors here.
@@ -162,7 +160,7 @@ function signIn() {
       .signInWithEmailAndPassword(userSIEmail, userSIPassword)
       .then((success) => {
         console.log("Signed IN");
-        window.location.replace("template/landing.html");
+        window.location.replace("landing.html");
       })
       .catch((error) => {
         // Handle Errors here.
