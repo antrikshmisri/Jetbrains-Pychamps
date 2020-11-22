@@ -7,7 +7,7 @@ const portNumber = process.env.PORT || 3000;
 
 app.use(cors());
 
-app.use(express.static(__dirname + "/template"));
+app.use(express.static(__dirname + "/template" , {index: 'landing.html'}));
 
 // app.use(express.static(__dirname + "/static"));
 
