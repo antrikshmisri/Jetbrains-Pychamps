@@ -69,8 +69,8 @@ a.demo {
 }
 a.demo:hover
 {
-  color: #42007b !important;
-  border-color: #42007b;
+  color: #42007b ;
+
 }
 
 a.drive-thru {
