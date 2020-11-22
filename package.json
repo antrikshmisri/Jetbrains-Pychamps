@@ -1,0 +1,26 @@
+{
+  "name": "jetbrains-pychamps",
+  "version": "1.0.0",
+  "description": "# This is the sample project for Jetbrains Pychamps hackathon.",
+  "main": "app.js",
+  "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antrikshmisri/Jetbrains-Pychamps.git"
+  },
+  "author": "Arteev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antrikshmisri/Jetbrains-Pychamps/issues"
+  },
+  "homepage": "https://github.com/antrikshmisri/Jetbrains-Pychamps#readme"
+}
