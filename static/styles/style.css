@@ -39,47 +39,52 @@ body {
 }
 
 a.navbar-brand span {
-  color: #42007b;
+  color: white;
   font-weight: 500;
   font-size: 35px !important;
 }
 
 .active-color {
-  color: #b30197 !important;
+  color:white !important;
 }
 a.nav-link {
   outline: none;
   transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  color: #42007b !important;
+  color: rgba(255,255,255,0.5) !important;
 }
 
 a.nav-link:hover {
-  color:#b30197 !important;
+  color:white!important;
 }
 
 a.sign-in {
-  color: #42007b !important;
+  color: white !important;
 }
 a.demo {
   font-weight: 700;
-  border: 2px solid #42007b;
+  border: 2px solid white;
   border-radius: 25px;
-  color: #42007b !important;
+  color:white !important;
   padding: 10px 20px;
+}
+a.demo:hover
+{
+  color: #42007b !important;
+  border-color: #42007b;
 }
 
 a.drive-thru {
-  border: 2px solid #42007b;
+  border: 2px solid white;
   transition: 200ms ease-in;
   font-weight: 700;
   border-radius: 25px;
-  background-color: white;
-  color: #42007b !important;
+  color: white !important;
   padding: 10px 20px;
 }
 a.drive-thru:hover {
-  background-color: rgba(255, 255, 255, 0);
-  color: #b30197 ;
+  background-color:#b30197;
+  color: white !important;
+  border-color: #b30197;
 }
 h1.tagline {
   /* animation: titleanim 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s; */
