@@ -4,7 +4,7 @@
  # About This Project
  
 
-This project is a product website. User can create , view , edit and delete the products. On top of that , the products can be filtered using different categories.
+This is a sample project for jetbrains pychamps hackathon. 
 </br>
 ## Built With
 
